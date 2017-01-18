@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale = 1">
+   <title>Contact Cornfed Coworking</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="cf.css" />
+<!--
+<script type="text/JavaScript" scr="validateFname2.js"></script>
+<script type="text/JavaScript" scr="validateLname.js"></script>
+-->
+<script>
+function myFunction() 
+{
+document.getElementById("checkForm").onsubmit = function(e)
+    {
+    var fieldValue = document.getElementById("fname").value;
+    var fieldValue = document.getElementById("Lname").value;
+    var fieldValue = document.getElementById("email").value;
+    var fieldValue = document.getElementById("phone").value;
+    var fieldValue = document.getElementById("comment").value;
+    if(fieldValue==null || fieldValue== "")
+        {
+            // the field was empty
+            e.preventDefault();
+            // something went wrong
+            alert("missing info");
+        }
+    }
+}
+</script>
+
+</head>
+<body>
+<!-- 
+Craig Phephles
+cfabout.html
+16WI_INFO_2900_6A - Hybrid - 360 Web Part 1
+Instructors: Brown/McCune/Paschall/Rosas
+date: 1.9.17
+attribution link to komodomedia.com. Social Network Icon Pack by Rogie King is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+--> 
+<div id="container">  
+<header>
+<h1>&nbsp;</h1>
+</header> <br>   
+    <nav>
+        <li><a href="cfhome.html" class="menu">Home</a></li>
+        <li><a href="cfabout.html" class="menu">Contact Us</a></li>
+        <li><a href="cfmember.html" class="menu">Membership</a></li>
+        <li><a href="cfevent.html" class="menu">Space Events</a></li>
+        <li><a href="cfreserve.html" class="menu">Space Reservation</a></li>
+    </nav> <br>   
+    <main>
+        <form action="http://www.randyconnolly.com/tests/process.php" method="post" id="checkForm">
+            <fieldset>
+               First Name: <input type="text" name="fname" placeholder="first name" id="fname"/>
+            </fieldset>
+            <fieldset>
+             Last Name: <input type="text" name="Lname" placeholder="last name" id="Lname"/>
+            </fieldset>
+            <fieldset>
+             Email:  <input type="email" name="email" placeholder="name@domain.com" id="email"/>
+            </fieldset>
+            <fieldset>
+            Phone:   <input type="tel" name="phone" placeholder="123-456-7890" id="phone"/>
+            </fieldset>
+            <fieldset>
+             Comments:  <textarea rows="3" name="comment" placeholder="your comments here" id="comment"/></textarea>
+            </fieldset>
+        <button onclick="myFunction()"> <type="submit"></input>Submit</button>
+
+        </form><br>
+    </main>
+
+<footer>
+    <li><a href="mailto:cphephles1@mail.mccneb.edu"><img src="images/email_32.png" alt="email"/></a></li> 
+    <li><a href="#"> <img src="images/facebook_32.png" alt="facebook"/></a></li> 
+    <li><a href="#"> <img src="images/twitter_32.png" alt="twitter"/></a></li> 
+    <li><a href="#"> <img src="images/sms.png" alt="call-text"/></a></li> 
+    
+<aside>&nbsp; &nbsp; Copyright &copy; 2017</aside> 
+</footer>
+
+
+</div>
+
+</body>
+</html>
